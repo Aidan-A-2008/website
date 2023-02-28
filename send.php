@@ -5,9 +5,9 @@
  $name= $_REQUEST['name'];
  $email = $_REQUEST['Email'];
  $message = $_REQUEST['Message'];
- $subject = "Message from Contact form !";
+ $subject = "Contact | aidan-a.me";
 
- $to ="xxxxxxxxxxxxx@gmail.com";  // change receiving email id 
+ $to ="contact@aidan-a.me";  // change receiving email id 
  
  $content = "Name : ". $name. "\r\nContact email : ". $email. "\r\n \r\nMessage : \r\n \r\n".$message ; // name [break] email [break] message
  
