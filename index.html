@@ -587,7 +587,15 @@
 <h1 style="color:#ffffff;direction:ltr;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;font-size:31px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">me@aidan-a.me | Aidan A#7573</span> </h1>
 </div>
 <div class="home-block home-block-2 home-paragraph">
-<p>Contact form coming soon</p>
+<form method="post" action="contact.php">
+	<label for="name">Name:</label>
+	<input type="text" class="text" name="cf_name" id="name" />
+	<label for="email">email:</label>
+	<input type="text" class="text" name="cf_email" id="email" />
+	<label for="text">Message:</label>
+	<textarea class="text" name="cf_message" id="message"></textarea>
+	<input type="submit" class="submit" value="Send" />
+</form>
 </div>
 <div class="home-block home-block-3 home-html-block"></div>
 </div>
