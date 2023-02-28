@@ -571,15 +571,20 @@
 <h1 style="color:#ffffff;direction:ltr;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;font-size:31px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">me@aidan-a.me | Aidan A#7573</span> </h1>
 </div>
 <div class="home-block home-block-2 home-html-block">
-<form action="contact.php" method="post">
-<label for="name">Name:</label>
-<input class="text" id="name" name="cf_name" type="text"/>
-<label for="email">email:</label>
-<input class="text" id="email" name="cf_email" type="text"/>
-<label for="text">Message:</label>
-<textarea class="text" id="message" name="cf_message"></textarea>
-<input class="submit" type="submit" value="Send"/>
-</form>
+    <form class="Contactform" action="send.php">
+
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Your name...">
+
+        <label>E-Mail</label>
+        <input type="text" name="Email" placeholder="Your email...">
+
+        <label>Message</label>
+        <textarea name="Message" placeholder="Write something..." style="height: 200px;"></textarea>
+
+        <center><button class="sendbutton">Send</button></center>
+
+    </form>
 </div>
 <div class="home-block home-block-3 home-html-block"></div>
 </div>
