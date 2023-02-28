@@ -1,32 +1,32 @@
 <?php
-$field_name = $_POST['cf_name'];
-$field_email = $_POST['cf_email'];
-$field_message = $_POST['cf_message'];
 
-$mail_to = 'contact@aidan-a.me';
-$subject = 'Contact Form | aidan-a.me'.$field_name;
 
-$body_message = 'From: '.$field_name."\n";
-$body_message .= 'E-mail: '.$field_email."\n";
-$body_message .= 'Message: '.$field_message;
+//varible setting
+ $name= $_REQUEST['name'];
+ $email = $_REQUEST['Email'];
+ $message = $_REQUEST['Message'];
+ $subject = "Message from Contact form !";
 
-$headers = 'From: '.$field_email."\r\n";
-$headers .= 'Reply-To: '.$field_email."\r\n";
+ $to ="xxxxxxxxxxxxx@gmail.com";  // change receiving email id 
+ 
+ $content = "Name : ". $name. "\r\nContact email : ". $email. "\r\n \r\nMessage : \r\n \r\n".$message ; // name [break] email [break] message
+ 
 
-$mail_status = mail($mail_to, $subject, $body_message, $headers);
 
-if ($mail_status) { ?>
-	<script language="javascript" type="text/javascript">
-		alert('Sucess Message');
-		window.location = 'index.html';
-	</script>
-<?php
+// check input fields
+if ( empty($name)|| empty($email)|| empty($message))
+{
+echo"<script type='text/javascript'>alert('Please fill all correct');
+    window.history.go(-1);
+    </script>";
 }
-else { ?>
-	<script language="javascript" type="text/javascript">
-		alert('Error Message');
-		window.location = 'index.html';
-	</script>
-<?php
+else 
+{ mail($to,$subject,$content);
+
+    echo"<script type='text/javascript'>alert('Your message sent succesfully ');
+    window.history.go(-1);
+    </script>";
 }
+
+
 ?>
