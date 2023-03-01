@@ -1,1 +1,434 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+	<title>Aidan A</title>
+	<meta content="summary_large_image" name="twitter:card" />
+	<meta content="website" property="og:type" />
+	<meta content="Hello I am a Aidan A, I am a developer, content creator, server manager, and a dj." property="og:description" />
+	<meta content="Aidan A" property="og:title" />
+	<meta content="Hello I am a Aidan A, I am a developer, content creator, server manager, and a dj." name="description" />
+	<meta charset="utf-8" />
+	<meta content="width=device-width" name="viewport" />
+	<style>
+		.playlists-row,
+		.playlists-row-content {
+			position: relative
+		}
+
+		.playlists-button .content,
+		.playlists-html-block {
+			text-align: center
+		}
+
+		body {
+			background-color: transparent;
+			color: #000;
+			font-family: Arial, Helvetica Neue, Helvetica, sans-serif
+		}
+
+		.playlists-page-container {
+			background-image: none;
+			background-position: top left;
+			background-size: auto;
+			background-repeat: no-repeat
+		}
+
+		a {
+			color: #8a3c90
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		body,
+		h1,
+		p {
+			margin: 0
+		}
+
+		.playlists-row-content {
+			max-width: 1440px;
+			margin: 0 auto;
+			display: flex
+		}
+
+		.playlists-row-content .playlists-col-w1 {
+			flex-basis: 8%
+		}
+
+		.playlists-row-content .playlists-col-w5 {
+			flex-basis: 42%
+		}
+
+		.playlists-row-content .playlists-col-w6 {
+			flex-basis: 50%
+		}
+
+		.playlists-row-content .playlists-col-w12 {
+			flex-basis: 100%
+		}
+
+		.playlists-button a,
+		.playlists-icon .playlists-icon-label-right a {
+			text-decoration: none
+		}
+
+		.playlists-divider,
+		.playlists-image {
+			overflow: auto
+		}
+
+		.playlists-divider .center,
+		.playlists-image .playlists-center {
+			margin: 0 auto
+		}
+
+		.playlists-row-1 .playlists-col-4 .playlists-block-2 {
+			width: 100%
+		}
+
+		.playlists-row-1 .playlists-row-content,
+		.playlists-row-6 .playlists-row-content {
+			border-radius: 0;
+			background-repeat: no-repeat;
+			color: #000
+		}
+
+		.playlists-icon {
+			display: inline-block;
+			vertical-align: middle
+		}
+
+		.playlists-icon .playlists-content {
+			display: flex;
+			align-items: center
+		}
+
+		.playlists-image img {
+			display: block;
+			width: 100%
+		}
+
+		.playlists-social .icon img {
+			max-height: 32px
+		}
+
+		.playlists-paragraph,
+		.playlists-text {
+			overflow-wrap: anywhere
+		}
+
+		.playlists-row-1 {
+			background-color: #2a2a2a;
+			background-repeat: no-repeat;
+			background-size: auto
+		}
+
+		.playlists-row-1 .playlists-row-content {
+			background-color: #2a2a2a;
+			background-image: url('https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/playlistsProAgency/952109_936605/IMG_0046.jpg');
+			background-size: cover
+		}
+
+		.playlists-row-1 .playlists-col-1 {
+			display: flex;
+			flex-direction: column;
+			justify-content: center
+		}
+
+		@media (max-width:1460px) {
+			.playlists-row-1 .playlists-col-1 {
+				padding: 0 !important
+			}
+		}
+
+		.playlists-row-1 .playlists-col-3,
+		.playlists-row-2 .playlists-col-1,
+		.playlists-row-2 .playlists-col-2,
+		.playlists-row-3 .playlists-col-1,
+		.playlists-row-4 .playlists-col-1,
+		.playlists-row-4 .playlists-col-2,
+		.playlists-row-5 .playlists-col-1,
+		.playlists-row-6 .playlists-col-1,
+		.playlists-row-7 .playlists-col-1 {
+			padding-bottom: 5px;
+			padding-top: 5px
+		}
+
+		.playlists-row-1 .playlists-col-2,
+		.playlists-row-1 .playlists-col-4 {
+			padding-top: 5px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center
+		}
+
+		.playlists-row-1 .playlists-col-2 .playlists-block-3 {
+			text-align: center;
+			width: 100%
+		}
+
+		.playlists-row-1 .playlists-col-2 .playlists-block-4 {
+			padding-bottom: 10px;
+			padding-top: 15px
+		}
+
+		.playlists-row-1 .playlists-col-2 .playlists-block-5 {
+			padding: 20px 10px 10px;
+			text-align: left
+		}
+
+		.playlists-row-1 .playlists-col-3 {
+			display: flex;
+			flex-direction: column;
+			justify-content: center
+		}
+
+		.playlists-row-2,
+		.playlists-row-3,
+		.playlists-row-4,
+		.playlists-row-5,
+		.playlists-row-6 {
+			background-color: #2a2a2a;
+			background-repeat: no-repeat
+		}
+
+		.playlists-row-2 .playlists-row-content,
+		.playlists-row-4 .playlists-row-content {
+			background-color: #2a2a2a;
+			color: #000;
+			background-repeat: no-repeat
+		}
+
+		.playlists-row-2 .playlists-col-2 .playlists-block-1,
+		.playlists-row-2 .playlists-col-2 .playlists-block-2,
+		.playlists-row-3 .playlists-col-1 .playlists-block-1,
+		.playlists-row-4 .playlists-col-1 .playlists-block-1,
+		.playlists-row-4 .playlists-col-1 .playlists-block-2,
+		.playlists-row-5 .playlists-col-1 .playlists-block-1 {
+			padding: 10px
+		}
+
+		.playlists-row-2 .playlists-col-2 .playlists-block-3,
+		.playlists-row-4 .playlists-col-1 .playlists-block-3 {
+			text-align: left;
+			padding: 10px
+		}
+
+		.playlists-row-3 .playlists-row-content,
+		.playlists-row-5 .playlists-row-content {
+			background-color: #2a2a2a;
+			background-repeat: no-repeat;
+			color: #000
+		}
+
+		.playlists-row-6 .playlists-col-1 .playlists-block-1 {
+			padding: 10px;
+			text-align: center
+		}
+
+		.playlists-row-7 {
+			background-repeat: no-repeat
+		}
+
+		.playlists-row-7 .playlists-row-content {
+			background-repeat: no-repeat;
+			color: #000
+		}
+
+		.playlists-row-7 .playlists-col-1 .playlists-block-1 {
+			color: #9d9d9d;
+			font-family: inherit;
+			font-size: 15px;
+			padding-bottom: 5px;
+			padding-top: 5px;
+			text-align: center
+		}
+
+		.playlists-row-1 .playlists-col-2 .playlists-block-4 {
+			color: #616162;
+			direction: ltr;
+			font-size: 21px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 180%;
+			text-align: left
+		}
+
+		.playlists-row-1 .playlists-col-2 .playlists-block-4 a {
+			color: #8a3b8f
+		}
+
+		.playlists-row-1 .playlists-col-2 .playlists-block-4 p:not(:last-child) {
+			margin-bottom: 16px
+		}
+
+		@media (max-width:768px) {
+			.playlists-mobile_hide {
+				display: none
+			}
+
+			.playlists-row-content:not(.no_stack) {
+				display: block
+			}
+
+			.playlists-row-1 .playlists-col-2 .playlists-block-3,
+			.playlists-row-1 .playlists-col-2 .playlists-block-5,
+			.playlists-row-1 .playlists-col-2 .playlists-block-5 .playlists-button-content {
+				text-align: center !important
+			}
+
+			.playlists-row-1 .playlists-col-2 .playlists-block-4 {
+				text-align: center !important;
+				font-size: 16px !important
+			}
+
+			.playlists-row-1 .playlists-col-2 .playlists-block-3 h1 {
+				font-size: 30px !important;
+				text-align: center !important
+			}
+		}
+
+		.playlists-row-7 .playlists-col-1 .playlists-block-1 .playlists-icon-image {
+			padding: 5px 6px 5px 5px
+		}
+
+		.playlists-row-7 .playlists-col-1 .playlists-block-1 .playlists-icon:not(.playlists-icon-first) .playlists-content {
+			margin-left: 0
+		}
+
+		.playlists-row-7 .playlists-col-1 .playlists-block-1 .playlists-icon::not(.playlists-icon-last) .playlists-content {
+			margin-right: 0
+		}
+	</style>
+</head>
+
+<body>
+	<div class="playlists-page-container">
+		<div class="playlists-row playlists-row-1">
+			<div class="playlists-row-content">
+				<div class="playlists-col playlists-col-1 playlists-col-w1">
+					<div class="playlists-block playlists-block-1 playlists-spacer">
+						<div class="spacer" style="height:1px;"></div>
+					</div>
+				</div>
+				<div class="playlists-col playlists-col-2 playlists-col-w5">
+					<div class="playlists-block playlists-block-1 playlists-spacer playlists-mobile_hide">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+					<div class="playlists-block playlists-block-2 playlists-spacer playlists-mobile_hide">
+						<div class="spacer" style="height:180px;"></div>
+					</div>
+					<div class="playlists-block playlists-block-3 playlists-heading">
+						<h1 style="color:#393d47;direction:ltr;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;font-size:42px;font-weight:700;letter-spacing:normal;line-height:150%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder" style="color: #ffffff;">Aidan A</span> </h1>
+					</div>
+					<div class="playlists-block playlists-block-4 playlists-paragraph">
+						<p><strong><span style="color: #ffffff;">My Playlists</span></strong></p>
+					</div>
+					<div class="playlists-block playlists-block-5 playlists-button"><a class="playlists-button-content" href="https://aidan-a.me" style="font-size: 16px; background-color: #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-radius: 4px; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #ffffff; direction: ltr; font-family: inherit; font-weight: 700; max-width: 100%; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; padding-top: 5px; width: auto; display: inline-block;"><span dir="ltr" style="word-break: break-word; font-size: 16px; line-height: 200%;">To Home</span></a></div>
+					<div class="playlists-block playlists-block-6 playlists-spacer playlists-mobile_hide">
+						<div class="spacer" style="height:240px;"></div>
+					</div>
+				</div>
+				<div class="playlists-col playlists-col-3 playlists-col-w1">
+					<div class="playlists-block playlists-block-1 playlists-spacer">
+						<div class="spacer" style="height:1px;"></div>
+					</div>
+					<div class="playlists-block playlists-block-2 playlists-spacer">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+				</div>
+				<div class="playlists-col playlists-col-4 playlists-col-w5">
+					<div class="playlists-block playlists-block-1 playlists-spacer playlists-mobile_hide">
+						<div class="spacer" style="height:80px;"></div>
+					</div>
+					<div class="playlists-block playlists-block-2 playlists-image playlists-mobile_hide"><img alt="" class="playlists-center playlists-fixedwidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/playlistsProAgency/952109_936605/IMG_3081.PNG" style="max-width:180px;" /></div>
+					<div class="playlists-block playlists-block-3 playlists-spacer playlists-mobile_hide">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="playlists-row playlists-row-2">
+			<div class="playlists-row-content">
+				<div class="playlists-col playlists-col-1 playlists-col-w6">
+					<div class="playlists-block playlists-block-1 playlists-html-block"><iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/my-shazam-tracks/pl.u-xlyNq9NskoBb2Y" style="width:100%;max-width:660px;overflow:hidden;background:transparent;"></iframe></div>
+				</div>
+				<div class="playlists-col playlists-col-2 playlists-col-w6">
+					<div class="playlists-block playlists-block-1 playlists-text">
+						<div class="playlists-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+							<p style="font-size: 14px; line-height: 16px; text-align: left;"><strong style="">FAR FAR AWAY</strong></p>
+						</div>
+					</div>
+					<div class="playlists-block playlists-block-2 playlists-text">
+						<div class="playlists-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+							<p style="font-size: 14px; line-height: 16px; text-align: left;">Behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+						</div>
+					</div>
+					<div class="playlists-block playlists-block-3 playlists-button">
+						<div class="playlists-button-content" style="font-family: inherit; font-size: 16px; background-color: #3AAEE0; border-radius: 4px; border-top: 0px solid transparent; border-right: 0px solid transparent; border-bottom: 0px solid transparent; border-left: 0px solid transparent; color: #ffffff; padding-top: 5px; padding-right: 20px; padding-bottom: 5px; padding-left: 20px; width: auto; max-width: 100%; direction: ltr; display: inline-block;"><span style="margin: 0; word-break: break-word; font-size: 16px; line-height: 200%;">Button</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="playlists-row playlists-row-3">
+			<div class="playlists-row-content">
+				<div class="playlists-col playlists-col-1 playlists-col-w12">
+					<div class="playlists-block playlists-block-1 playlists-divider">
+						<div class="center playlists-separator" style="border-top:solid 1px #dddddd;width:100%;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="playlists-row playlists-row-4">
+			<div class="playlists-row-content">
+				<div class="playlists-col playlists-col-1 playlists-col-w6">
+					<div class="playlists-block playlists-block-1 playlists-text">
+						<div class="playlists-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+							<p style="font-size: 14px; line-height: 16px; text-align: left;"><strong style="">FAR FAR AWAY</strong></p>
+						</div>
+					</div>
+					<div class="playlists-block playlists-block-2 playlists-text">
+						<div class="playlists-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+							<p style="font-size: 14px; line-height: 16px; text-align: left;">Behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+						</div>
+					</div>
+					<div class="playlists-block playlists-block-3 playlists-button">
+						<div class="playlists-button-content" style="font-family: inherit; font-size: 16px; background-color: #3AAEE0; border-radius: 4px; border-top: 0px solid transparent; border-right: 0px solid transparent; border-bottom: 0px solid transparent; border-left: 0px solid transparent; color: #ffffff; padding-top: 5px; padding-right: 20px; padding-bottom: 5px; padding-left: 20px; width: auto; max-width: 100%; direction: ltr; display: inline-block;"><span dir="ltr" style="margin: 0; word-break: break-word; font-size: 16px; line-height: 200%;">Button</span></div>
+					</div>
+				</div>
+				<div class="playlists-col playlists-col-2 playlists-col-w6">
+					<div class="playlists-block playlists-block-1 playlists-html-block"><iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/spotify/pl.u-gxblkPRF5xJNpq" style="width:100%;max-width:660px;overflow:hidden;background:transparent;"></iframe></div>
+				</div>
+			</div>
+		</div>
+		<div class="playlists-row playlists-row-5">
+			<div class="playlists-row-content">
+				<div class="playlists-col playlists-col-1 playlists-col-w12">
+					<div class="playlists-block playlists-block-1 playlists-divider">
+						<div class="center playlists-separator" style="border-top:solid 1px #dddddd;width:100%;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="playlists-row playlists-row-6">
+			<div class="playlists-row-content">
+				<div class="playlists-col playlists-col-1 playlists-col-w12">
+					<div class="playlists-block playlists-block-1 playlists-social">
+						<div class="content"><span class="icon" style="padding:0 5px 0 5px;"><a href="https://www.twitter.com/@aidan_a_2008"><img alt="Twitter" src="https://app-rsrc.getplaylists.io/public/resources/social-networks-icon-sets/t-only-logo-dark-gray/twitter@2x.png" title="twitter" /></a></span><span class="icon" style="padding:0 5px 0 5px;"><a href="https://www.youtube.com/channel/@Aidan_A-2008"><img alt="YouTube" src="https://app-rsrc.getplaylists.io/public/resources/social-networks-icon-sets/t-only-logo-dark-gray/youtube@2x.png" title="YouTube" /></a></span><span class="icon" style="padding:0 5px 0 5px;"><a href="https://discord.gg/PhWcnGWpN4"><img alt="Discord" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/playlistsProAgency/952109_936605/image-removebg-preview-3.png" title="Discord" /></a></span><span class="icon" style="padding:0 5px 0 5px;"><a href="https://tiktok.com/@aidan.a_2008"><img alt="TikTok" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/playlistsProAgency/952109_936605/image-removebg-preview-4.png" title="TikTok" /></a></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="playlists-row playlists-row-7">
+			<div class="playlists-row-content">
+				<div class="playlists-col playlists-col-1 playlists-col-w12">
+                                </div>
+							</div>
+						</div>
+					</div>
+</body>
+
+</html>
